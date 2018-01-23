@@ -10,7 +10,8 @@ Entry2=tkinter.Entry(root)
 def retrieve():
     input1=Entry1.get()
     input2=Entry2.get()
-    print("the person's name is "+input1+" and his age is "+input2)
+    input1=int(input1)+int(input2)
+    print(input1)
 
 
 but=tkinter.Button(root,text="Submit",command=retrieve)
